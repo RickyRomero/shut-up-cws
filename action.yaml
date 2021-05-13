@@ -1,0 +1,8 @@
+name: 'Shut Up CWS'
+description: 'Deploys Shut Up for Chrome'
+branding:
+  color: 'yellow'
+  icon: 'package'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
