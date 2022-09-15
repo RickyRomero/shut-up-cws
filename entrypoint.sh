@@ -7,6 +7,9 @@ echo "Copying extension files..."
 cd /usr/app
 cp -R $GITHUB_WORKSPACE/* /cws/extension/
 
+echo "Removing Firefox manifest..."
+rm /cws/extension/manifest.ffx.json
+
 echo "Preparing build directory..."
 mkdir "/cws/build/Shut Up"
 cp -R /cws/extension/* "/cws/build/Shut Up/"
