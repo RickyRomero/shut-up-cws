@@ -5,7 +5,7 @@ set -eu
 
 echo "Copying extension files..."
 cd /usr/app
-cp -R $GITHUB_WORKSPACE/* /cws/extension/
+cp -R $GITHUB_WORKSPACE/src/* /cws/extension/
 
 echo "Removing Firefox manifest..."
 rm /cws/extension/manifest.ffx.json
